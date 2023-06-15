@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['updateorder_0',['UpdateOrder',['../class_seguro_de_salud_1_1_seguros_data_set_table_adapters_1_1_table_adapter_manager.html#a7cec1b642af1c2a969c558e67190fd41',1,'SeguroDeSalud.SegurosDataSetTableAdapters.TableAdapterManager.UpdateOrder()'],['../class_seguro_de_salud_1_1_seguros_data_set1_table_adapters_1_1_table_adapter_manager.html#a5b9f45ff46fde21b65395d55e53a9b37',1,'SeguroDeSalud.SegurosDataSet1TableAdapters.TableAdapterManager.UpdateOrder()'],['../class_seguro_de_salud_1_1_seguros_factura_table_adapters_1_1_table_adapter_manager.html#a38a05cc37ad30c0fa199272220296533',1,'SeguroDeSalud.SegurosFacturaTableAdapters.TableAdapterManager.UpdateOrder()'],['../class_seguro_de_salud_1_1_seguros_factura_cedula_table_adapters_1_1_table_adapter_manager.html#ac9bdbe6c2a5b8e4e7914aba221dbaf53',1,'SeguroDeSalud.SegurosFacturaCedulaTableAdapters.TableAdapterManager.UpdateOrder()']]],
+  ['usp_5fselect_5ffactura_5fbyid_1',['usp_SELECT_Factura_ByID',['../class_seguro_de_salud_1_1_seguros_factura.html#aec158dc0aa849708bdce14d8f734f0f9',1,'SeguroDeSalud::SegurosFactura']]],
+  ['usp_5fselect_5ffactura_5fbyidcedula_2',['usp_SELECT_Factura_ByIDCedula',['../class_seguro_de_salud_1_1_seguros_factura_cedula.html#a79b70e9eda10d06b418a930c8ef8deda',1,'SeguroDeSalud::SegurosFacturaCedula']]],
+  ['usp_5fselect_5ffactura_5fbyiddias_3',['usp_SELECT_Factura_ByIDDias',['../class_seguro_de_salud_1_1_seguros_data_set1.html#a322dfdee783d79af43fc690b3b2d9fa2',1,'SeguroDeSalud::SegurosDataSet1']]],
+  ['usp_5fselect_5ffactura_5fbyidfechas_4',['usp_SELECT_Factura_ByIDFechas',['../class_seguro_de_salud_1_1_seguros_data_set.html#a4f1d891fd61938545cc691dffc8cf112',1,'SeguroDeSalud::SegurosDataSet']]]
+];

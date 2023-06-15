@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22F2E085-948E-4B96-9F3B-7C71A55B4B41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SeguroDeSalud</RootNamespace>
+    <AssemblyName>SeguroDeSalud</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>C:\Users\Andrey\Downloads\Proyecto Seguro\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BFC494A65DC217BCB9E9DB83D12FED53F5D7DB80</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SeguroDeSalud_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLLAsegurados.cs" />
+    <Compile Include="BLL\BLLCobertura.cs" />
+    <Compile Include="BLL\BLLFacturaEncabezado.cs" />
+    <Compile Include="BLL\BLLIVA.cs" />
+    <Compile Include="BLL\BLLLog4Net.cs" />
+    <Compile Include="BLL\BLLPlanesSeguro.cs" />
+    <Compile Include="BLL\BLLPlanning.cs" />
+    <Compile Include="BLL\BLLPoliza.cs" />
+    <Compile Include="BLL\BLLRecidencia.cs" />
+    <Compile Include="BLL\BLLSeguro.cs" />
+    <Compile Include="BLL\BLLTarjetaCredito.cs" />
+    <Compile Include="BLL\BLLTipoPlan.cs" />
+    <Compile Include="BLL\BLLTipoUsuario.cs" />
+    <Compile Include="BLL\BLLUsuario.cs" />
+    <Compile Include="DAL\DALAsegurados.cs" />
+    <Compile Include="DAL\DALCobertura.cs" />
+    <Compile Include="DAL\DALFacturaEncabezado.cs" />
+    <Compile Include="DAL\DALIVA.cs" />
+    <Compile Include="DAL\DALLog4Net.cs" />
+    <Compile Include="DAL\DALPlanning.cs" />
+    <Compile Include="DAL\DALPoliza.cs" />
+    <Compile Include="DAL\DALResidencia.cs" />
+    <Compile Include="DAL\DALSeguro.cs" />
+    <Compile Include="DAL\DALSeguroPlanning.cs" />
+    <Compile Include="DAL\DALTarjetaCredito.cs" />
+    <Compile Include="DAL\DALTipoPlan.cs" />
+    <Compile Include="DAL\DALUsuario.cs" />
+    <Compile Include="DAL\DALTipoUsuario.cs" />
+    <Compile Include="dsSegurosFactura.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSegurosFactura.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Asegurados.cs" />
+    <Compile Include="Entities\Cobertura.cs" />
+    <Compile Include="Entities\FacturaEncabezado.cs" />
+    <Compile Include="Entities\IVA.cs" />
+    <Compile Include="Entities\Log4Net.cs" />
+    <Compile Include="Entities\Planning.cs" />
+    <Compile Include="Entities\PlanSeguros.cs" />
+    <Compile Include="Entities\Poliza.cs" />
+    <Compile Include="Entities\Recidencia.cs" />
+    <Compile Include="Entities\Seguro.cs" />
+    <Compile Include="Entities\TarjetaCredito.cs" />
+    <Compile Include="Entities\TipoPlan.cs" />
+    <Compile Include="Entities\TipoUsuario.cs" />
+    <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Interfaces\IBLLPlanning.cs" />
+    <Compile Include="Interfaces\IBLLRecidencia.cs" />
+    <Compile Include="Interfaces\IBLLTipoUsuario.cs" />
+    <Compile Include="Interfaces\IBLLUsuario.cs" />
+    <Compile Include="Interfaces\IDALPlanning.cs" />
+    <Compile Include="Interfaces\IDALUsuario.cs" />
+    <Compile Include="Persistencia\DataBase.cs" />
+    <Compile Include="Persistencia\FactoryConexion.cs" />
+    <Compile Include="Persistencia\FactoryDataBase.cs" />
+    <Compile Include="Persistencia\IDataBase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SegurosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SegurosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SegurosDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SegurosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SegurosFacturaCedula.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SegurosFacturaCedula.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\DatosJSON.cs" />
+    <Compile Include="Servicios\GenericJSON.cs" />
+    <Compile Include="Servicios\ServicioBCCRApi.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmMenu.designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmRegistro.designer.cs">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoUsuario.designer.cs">
+      <DependentUpon>frmManteminientoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoPlan.designer.cs">
+      <DependentUpon>frmManteminientoPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoCobertura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoCobertura.designer.cs">
+      <DependentUpon>frmManteminientoCobertura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Procesos\frmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Procesos\frmFactura.designer.cs">
+      <DependentUpon>frmFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoPoliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoPoliza.designer.cs">
+      <DependentUpon>frmManteminientoPoliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmManteminientoSeguro.designer.cs">
+      <DependentUpon>frmManteminientoSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Procesos\frmFirmaDigital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Procesos\frmFirmaDigital.designer.cs">
+      <DependentUpon>frmFirmaDigital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Procesos\frmFacturasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Procesos\frmFacturasClientes.designer.cs">
+      <DependentUpon>frmFacturasClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Procesos\frmAsegurados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Procesos\frmAsegurados.designer.cs">
+      <DependentUpon>frmAsegurados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Procesos\frmReporteFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Procesos\frmReporteFactura.Designer.cs">
+      <DependentUpon>frmReporteFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Reportes\frmReporteDias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reportes\frmReporteDias.Designer.cs">
+      <DependentUpon>frmReporteDias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Reportes\frmReporteFacturasCedula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reportes\frmReporteFacturasCedula.Designer.cs">
+      <DependentUpon>frmReporteFacturasCedula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Reportes\frmResporteFacturasFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reportes\frmResporteFacturasFechas.Designer.cs">
+      <DependentUpon>frmResporteFacturasFechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios\Encriptacion.cs" />
+    <Compile Include="Utilitarios\Utilitarios.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmRegistro.resx">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimientos\frmManteminientoUsuario.resx">
+      <DependentUpon>frmManteminientoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimientos\frmManteminientoPlan.resx">
+      <DependentUpon>frmManteminientoPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimientos\frmManteminientoCobertura.resx">
+      <DependentUpon>frmManteminientoCobertura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Procesos\frmFactura.resx">
+      <DependentUpon>frmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimientos\frmManteminientoPoliza.resx">
+      <DependentUpon>frmManteminientoPoliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimientos\frmManteminientoSeguro.resx">
+      <DependentUpon>frmManteminientoSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Procesos\frmFirmaDigital.resx">
+      <DependentUpon>frmFirmaDigital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Procesos\frmFacturasClientes.resx">
+      <DependentUpon>frmFacturasClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Procesos\frmAsegurados.resx">
+      <DependentUpon>frmAsegurados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Procesos\frmReporteFactura.resx">
+      <DependentUpon>frmReporteFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Procesos\reporteFactura.rdlc" />
+    <EmbeddedResource Include="UI\Reportes\frmReporteDias.resx">
+      <DependentUpon>frmReporteDias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reportes\frmReporteFacturasCedula.resx">
+      <DependentUpon>frmReporteFacturasCedula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reportes\frmResporteFacturasFechas.resx">
+      <DependentUpon>frmResporteFacturasFechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reportes\ReporteCedula.rdlc" />
+    <EmbeddedResource Include="UI\Reportes\ReporteFacturaFechas.rdlc" />
+    <EmbeddedResource Include="UI\Reportes\rptFacturaDias.rdlc" />
+    <None Include="dsSegurosFactura.xsc">
+      <DependentUpon>dsSegurosFactura.xsd</DependentUpon>
+    </None>
+    <None Include="dsSegurosFactura.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSegurosFactura.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSegurosFactura.xss">
+      <DependentUpon>dsSegurosFactura.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SeguroDeSalud_TemporaryKey.pfx" />
+    <None Include="SegurosDataSet.xsc">
+      <DependentUpon>SegurosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SegurosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SegurosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SegurosDataSet.xss">
+      <DependentUpon>SegurosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SegurosDataSet1.xsc">
+      <DependentUpon>SegurosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SegurosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SegurosDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SegurosDataSet1.xss">
+      <DependentUpon>SegurosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SegurosFacturaCedula.xsc">
+      <DependentUpon>SegurosFacturaCedula.xsd</DependentUpon>
+    </None>
+    <None Include="SegurosFacturaCedula.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SegurosFacturaCedula.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SegurosFacturaCedula.xss">
+      <DependentUpon>SegurosFacturaCedula.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
